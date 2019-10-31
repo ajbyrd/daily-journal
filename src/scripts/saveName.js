@@ -32,6 +32,8 @@ const newEntry = () => {
         const mood = document.querySelector("#moodField").value
 
         const journalObj = {date, concept, entry, mood}
+
+        
         API.postJournalEntry(journalObj)
             .then(API.getJournalEntries)
             .then(renderDOM.renderJournalEntries)
