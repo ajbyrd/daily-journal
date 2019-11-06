@@ -6,13 +6,13 @@
     to get the data and display it.
 */
 
-import renderDom from "./entriesDOM.js"
+import renderDOM from "./entriesDOM.js"
 import API from "./data.js"
 import newEntry from "./saveName.js"
 import moodFilter from "./filterEntries.js"
 
 API.getJournalEntries()
-.then(response => renderDom.renderJournalEntries(response))
+.then(response => renderDOM.renderJournalEntries(response))
 
 newEntry()
 
