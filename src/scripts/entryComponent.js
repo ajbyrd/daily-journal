@@ -11,6 +11,7 @@ const entryManager = {
         <p>${journalObj.entry}</p>
         <p>${journalObj.mood}</p>
         <p>${journalObj.date}</p>
+        
       </section>
     `
   }

@@ -15,5 +15,6 @@ export default {
       },
       body: JSON.stringify(newEntry)
     })
-  }
+  },
+  
 }

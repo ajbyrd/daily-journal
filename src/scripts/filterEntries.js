@@ -14,7 +14,6 @@ const moodFilter = () => {
             const mood = event.target.value
 
             if (mood === "amazing") {
-            
 
                 API.getJournalEntries()
                     .then(response => {
@@ -41,8 +40,7 @@ const moodFilter = () => {
 
             if (mood === "all") {
                 API.getJournalEntries()
-                .then(response => renderDom.renderJournalEntries(response))
-
+                .then(response => renderDOM.renderJournalEntries(response))
             }
 
             // API.getJournalEntries()
